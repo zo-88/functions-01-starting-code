@@ -19,5 +19,3 @@ const getPlayChoice = function () {
 startGameBtn.addEventListener('click', function () {
   console.log('starting game');
 });
-
-// hello
