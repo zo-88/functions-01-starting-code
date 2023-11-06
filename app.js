@@ -4,6 +4,7 @@ const startGameBtn = document.getElementById('start-game-btn');
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
+const DEFAULT_USER_CHOICE = ROCK;
 
 const getPlayChoice = function () {
   const selection = prompt(
@@ -12,7 +13,7 @@ const getPlayChoice = function () {
   ).toUpperCase();
 
   if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS) {
-    alert('Invalid Choice! We chose Rock for you.');
+    alert(`Invalid Choice! We chose ${ROCK} for you.`);
   }
 };
 
